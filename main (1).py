@@ -1,10 +1,20 @@
-n=int(input("enter the number:"))
-fact=1
-count=2
-if n==0:
-  print("factorial of 0 is 1")
-if n>0:
-  while(count<=n):
-    fact=fact*count
-    count=count+1
-print("the factorial of the given number:",fact)
+class Player:
+  def play(self):
+    print("The player is playing cricket.")
+
+
+class Batsman(Player):
+  def play(self):
+      print("The batsman is batting.")
+
+
+class Bowler(Player):
+  def play(self):
+      print("The bowler is bowling.")
+
+
+batsman = Batsman()
+bowler = Bowler()
+
+batsman.play()
+bowler.play()
